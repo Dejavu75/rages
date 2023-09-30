@@ -1,0 +1,166 @@
+@import url("estilos815.css") (min-width: 15px); 
+@import url("estilos816.css") (min-width: 906px);
+
+/*and (max-width:815px);*/
+
+/* @media only screen and (max-width: 815px) {
+    @import "./style815.css";
+ }
+ @media only screen and (min-width: 816px) {
+    @import "./style816.css";
+ } */
+/* ENCABEZADO */
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    background-color: #f0f0f0;
+    color: gray
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    margin: 0px;
+    height: 64px;
+    box-shadow: 1px 1px 2px 0 gray;
+    background-color: white;
+}
+
+
+.brand {
+    color: grey;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.seal {
+    justify-content: flex-end;
+    scale: 40%;
+    width: 30px;
+}
+
+.logoicon {
+    object-fit: initial;
+    scale: 70%;
+}
+
+.headicon {
+    display: flex;
+    justify-content: flex-end;
+    vertical-align: middle;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+}
+
+/*TEXTO*/
+.titulito {
+    border: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.textito {
+    margin-top: -15px
+}
+
+
+.separador {
+    border: solid;
+    border-color: rgb(196, 194, 194);
+    border-width: 1px;
+    margin: 10px -4px 8px -4px;
+    box-shadow: 1px 1px 2px 2 rgb(211, 207, 207);
+}
+.labelbold{font-weight: bold;}
+.logowait {
+    display: flex;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px -15px gray;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+/* Cuerpo */
+.cuerpo{max-width: 1130px; margin:auto;}
+.enfiladoinfo {
+    display: flex;
+    flex-direction:column ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.encolumnadoinfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.boxedfit {
+    background-color: white;
+    margin: 10px; 
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px -15px gray;
+}
+.boxed {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px -15px gray;
+}
+
+.seguimiento {
+    display: flex;
+    margin: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-weight: bold;
+    font-size:1.5rem;
+}
+.SegRemito{margin-right: 10px;}
+
+
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}
+.imgr{
+    -webkit-animation: 3s rotate linear infinite;
+    animation: 3s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.sepdescarga{  width:15px; height: 15px; padding-left: 8px;}
+.padr15{margin-right: 15px}
+.padr5{margin-right: 5px}
+.width70 {width: 70px}
+.width40 {min-width: 60px}
+.width120 {min-width: 105px}
+.alighright {text-align: right; justify-content: right;}
+
+.RenglonadoInfo{display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}

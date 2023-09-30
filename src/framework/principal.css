@@ -1,0 +1,6 @@
+.principal {
+    object-fit: initial;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,10 @@
+.dummy {
+    height: 100%;
+    min-width: 500px;
+}
+
+.dirinfo_renglon{
+    display: flex;
+    flex-direction:row;
+}
+

@@ -1,0 +1,10 @@
+# docker-compose.yml
+ 
+# Reference compose file version 3
+version: “3”
+services: rages
+react-app: rages
+build: .
+# expose 3000 as hosting port & 3000 in container port
+ports:
+- “3000:3000”

@@ -1,0 +1,28 @@
+/* Cuerpo */
+.encolumnado {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.infobox {
+    max-width: 250px;
+    font-size: 14px;
+}
+.dirinfo {
+    max-width: 300px;
+    min-width: 300px;
+}
+
+.datospedido {
+    height: 100%;
+    min-width: 500px;
+}
+.dirinfo_renglon{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
