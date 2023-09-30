@@ -58,31 +58,41 @@ function TablaIndices2() {
         console.log(indices);
         setDatas(indices)
   });
-  }, []);
+  }, []); 
 
   const columns = useMemo<MRT_ColumnDef<indices2>[]>(
     () => [
       {
         accessorKey: 'fecha', //access nested data with dot notation
         header: 'Fecha',
-        maxsize: 70,
+        maxsize: 50,
         type: 'date',
       },
       {
         accessorKey: 'indice1',
         header: 'Coef',
-        maxsize: 70,
+        maxsize: 50,
       },
       {
         accessorKey: 'indice2', //normal accessorKey
         header: 'IPC',
-        maxsize: 50,
+        maxsize: 30,
       },
     ],
     [],
   );
 
-  return <MaterialReactTable  columns={columns} data={datas} />;
+  return <MaterialReactTable  columns={columns} data={datas} 
+  initialState={{
+    density: 'compact',
+    sorting: [
+      {
+        id: 'fecha', //sort by age by default on page load
+        desc: true,
+      },
+    ],
+  }}
+  />;
 }
 
 export default TablaIndices;
