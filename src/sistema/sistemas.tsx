@@ -22,7 +22,13 @@ function TablaSistemas() {
 function TablaSistemas2() {
   const [datas, setDatas] = useState<estado_general[]>([]);
   useEffect(() => {
+    if (env.API_PATH === undefined) {
+console.log("env.API_PATH undefined")
+      env.API_PATH = "http://localhost:3001"
+    }
+    console.log("env.API_PATH not undefined")
     let xpath = env.API_PATH + "/ages/sistema/obtener";
+
     fetch(xpath)
       .then((res) => res.json())
       .then((data) => {

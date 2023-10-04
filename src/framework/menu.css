@@ -1,0 +1,28 @@
+.menuitem {
+    color: grey;
+    margin-top: 15px;
+    margin-left: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:link {
+    color: grey;
+    text-decoration: none;
+}
+
+a:visited {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+a:active {
+    color: grey;
+    text-decoration: none;
+}
