@@ -1,7 +1,7 @@
 window.env = {
   "ALLUSERSPROFILE": "C:\\ProgramData",
   "AMDRMSDKPATH": "C:\\Program Files\\AMD\\RyzenMasterSDK\\",
-  "API_PATH": "https://nages.solinges.com.ar:444",
+  "API_PATH": "http://localhost:3001",
   "APPDATA": "C:\\Users\\diego\\AppData\\Roaming",
   "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
   "ChocolateyLastPathUpdate": "133272773894457316",

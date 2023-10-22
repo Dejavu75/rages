@@ -1,5 +1,5 @@
 export class nagesConfig {
-    API_PATH = "https://nages.solinges.com.ar:444";
+  API_PATH = "https://nages.solinges.com.ar:444";  
 }
 
 export function fecha_grilla(fechaO: string, Hora: boolean) : string{
