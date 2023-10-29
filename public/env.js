@@ -1,7 +1,6 @@
 window.env = {
   "ALLUSERSPROFILE": "C:\\ProgramData",
   "AMDRMSDKPATH": "C:\\Program Files\\AMD\\RyzenMasterSDK\\",
-  "API_PATH": "https://nages.solinges.com.ar:444",
   "APPDATA": "C:\\Users\\diego\\AppData\\Roaming",
   "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
   "ChocolateyLastPathUpdate": "133272773894457316",
@@ -21,8 +20,6 @@ window.env = {
   "LOGONSERVER": "\\\\DEY",
   "MOSQUITTO_DIR": "C:\\Program Files\\mosquitto",
   "NODE": "C:\\Program Files\\nodejs\\node.exe",
-  "NODE_EXE": "C:\\Program Files\\nodejs\\\\node.exe",
-  "NPM_CLI_JS": "C:\\Users\\diego\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js",
   "npm_command": "start",
   "npm_config_cache": "C:\\Users\\diego\\AppData\\Local\\npm-cache",
   "npm_config_globalconfig": "C:\\Users\\diego\\AppData\\Roaming\\npm\\etc\\npmrc",
@@ -42,7 +39,6 @@ window.env = {
   "npm_package_json": "D:\\Webs\\React\\rages\\package.json",
   "npm_package_name": "rages",
   "npm_package_version": "0.1.0",
-  "NPM_PREFIX_NPM_CLI_JS": "C:\\Users\\diego\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js",
   "NUMBER_OF_PROCESSORS": "4",
   "OneDrive": "D:\\Users\\diego\\OneDrive",
   "OneDriveConsumer": "D:\\Users\\diego\\OneDrive",
@@ -60,6 +56,7 @@ window.env = {
   "PROMPT": "$P$G",
   "PSModulePath": "C:\\Users\\diego\\OneDrive\\Documentos\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
   "PUBLIC": "C:\\Users\\Public",
+  "REACT_APP_API_PATH": "http://localhost:3001",
   "SESSIONNAME": "Console",
   "SystemDrive": "C:",
   "SystemRoot": "C:\\WINDOWS",
@@ -72,5 +69,5 @@ window.env = {
   "windir": "C:\\WINDOWS",
   "WSLENV": "WT_SESSION:WT_PROFILE_ID:",
   "WT_PROFILE_ID": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-  "WT_SESSION": "983ea7e7-a475-4d1a-a2d6-0073f1b43c59"
+  "WT_SESSION": "eca1c6fc-e8eb-4cff-a553-ccee12e34d78"
 };

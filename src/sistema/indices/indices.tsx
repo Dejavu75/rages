@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
-import MaterialReactTable, { MRT_ColumnDef } from 'material-react-table';
-import env from "react-dotenv";
+import { MaterialReactTable, MRT_ColumnDef } from 'material-react-table'
+import { nagesConfig } from '../../funciones';
+
 
 export type indices = {
   fecha: Date
@@ -37,7 +38,8 @@ function TablaIndices() {
 function TablaIndices2() {
   const [datas, setDatas] = useState<indices2[]>([]);
   useEffect(() => {
-    let xpath = env.API_PATH + "/ages/tablas/indices/mensuales/";
+    const nConf: nagesConfig = new nagesConfig()
+    let xpath = nConf.API_PATH + "/ages/tablas/indices/mensuales/";
     fetch(xpath)
       .then((res) => res.json())
       .then((data) => {

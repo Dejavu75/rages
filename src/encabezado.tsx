@@ -8,7 +8,7 @@ export function Encabezado() {
         <header>
             <span>
                 <a href="https://nages.solinges.com.ar" target="_blank" rel="noopener noreferrer">
-                    <img className="Seal" src="images/solinges.png" />
+                    <img className="Seal" src="/images/solinges.png" />
                 </a>
             </span>
             <span className="headicon">
@@ -20,7 +20,7 @@ export function Encabezado() {
                     <span className="menuitem boxed"><a href="/analytics/afip">AFIP</a></span>                         
                 </span>
                 <span className="headicon">
-                    <span><a href="https://nages.solinges.com.ar" target="_blank" rel="noreferrer"><img className="logoicon" src="images/logo_nuevo_chico.ico" /></a></span>
+                    <span><a href="https://nages.solinges.com.ar" target="_blank" rel="noreferrer"><img className="logoicon" src="/images/logo_nuevo_chico.ico" /></a></span>
                 </span>
             </span>
         </header>

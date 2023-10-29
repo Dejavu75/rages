@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useState } from 'react';
-import MaterialReactTable, { MRT_ColumnDef } from 'material-react-table';
-import env from "react-dotenv";
-import { fecha_grilla } from '../../funciones';
-import { estado_general } from '../../schemas/sch_estados';
+import { MaterialReactTable, MRT_ColumnDef } from 'material-react-table'
 
+import { fecha_grilla, nagesConfig } from '../../funciones';
+import { estado_general } from '../../schemas/sch_estados';
+const nConf: nagesConfig = new nagesConfig()
 
 
 function TablaSistemas() {
@@ -22,7 +22,7 @@ function TablaSistemas() {
 function ResumenSistemas() {
   const [datas, setDatas] = useState<estado_general[]>([]);
   useEffect(() => {
-    let xpath = env.API_PATH + "/ages/sistema/obtener";
+    let xpath = nConf.API_PATH + "/ages/sistema/obtener";
     fetch(xpath)
       .then((res) => res.json())
       .then((data) => {
@@ -67,7 +67,7 @@ function distintos(data: any[]) {
 function TablaSistemas3() {
   const [datas, setDatas] = useState<estado_general[]>([]);
   useEffect(() => {
-    let xpath = env.API_PATH + "/ages/sistema/obtener";
+    let xpath = nConf.API_PATH + "/ages/sistema/obtener";
     fetch(xpath)
       .then((res) => res.json())
       .then((data) => {

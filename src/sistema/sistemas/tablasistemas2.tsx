@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import MaterialReactTable, { MRT_ColumnDef } from 'material-react-table';
-import env from "react-dotenv";
-import { fecha_grilla } from '../../funciones';
-import { estado_general } from '../../schemas/sch_estados';
+import { MaterialReactTable, MRT_ColumnDef } from 'material-react-table'
 
+import { fecha_grilla, nagesConfig } from '../../funciones';
+import { estado_general } from '../../schemas/sch_estados';
+const nConf: nagesConfig = new nagesConfig()
 interface TablaSistemas2Props {
     onSistemaSelect: (id: string) => void;
 }
@@ -14,9 +14,9 @@ function distintos(data: any[]) {
 }
 function TablaSistemas2({ onSistemaSelect }: TablaSistemas2Props) {
     const [datas, setDatas] = useState<estado_general[]>([]);
-
+    
     useEffect(() => {
-        const xpath = env.API_PATH + "/ages/sistema/obtener";
+        const xpath = nConf.API_PATH + "/ages/sistema/obtener";
         fetch(xpath)
             .then((res) => res.json())
             .then((data) => {
