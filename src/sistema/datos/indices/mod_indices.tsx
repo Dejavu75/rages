@@ -1,18 +1,17 @@
-import { incoterm } from "./incoterms";
+import { indices } from "./indices";
 
-import { nagesConfig, nagesConfig2 } from "../../funciones";
+import { nagesConfig} from "../../../funciones";
 const nConf: nagesConfig = new nagesConfig()
-export async function actualizarIncoterm(incoterm: incoterm) {
-  console.log("creando config")
-  const nConf: nagesConfig2 = new nagesConfig2()
-  console.log("fin config", nConf)
+
+export async function actualizarIncoterm(indice: indices) {
+
   try {
     const response = await fetch(nConf.API_PATH + "/ages/tablas/incoterms/", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(incoterm)
+      body: JSON.stringify(indice)
     });
     const data = await response.json();
     console.log(data);
@@ -20,16 +19,16 @@ export async function actualizarIncoterm(incoterm: incoterm) {
     console.error(error);
   }
 };
-export async function borrarIncoterm(codigo: number) {
-  console.log("Eliminando ", codigo)
+export async function borrarIncoterm(fecha: Date) {
+  console.log("Eliminando ", fecha)
   try {
-    const response = await fetch(nConf.API_PATH + "/ages/tablas/incoterms/" + codigo.toString(), {
+    const response = await fetch(nConf.API_PATH + "/ages/tablas/incoterms/" + fecha.toString(), {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
       },
     });
-    console.log("Eliminando ", codigo)
+    console.log("Eliminando ", fecha)
     const data = await response.json();
     console.log("Respuesta",data);
   } catch (error) {

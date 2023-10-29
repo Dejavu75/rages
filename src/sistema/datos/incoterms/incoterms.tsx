@@ -23,7 +23,7 @@ import {
   useQuery,
   useQueryClient,
 } from '@tanstack/react-query';
-import { nagesConfig } from '../../funciones';
+import { nagesConfig } from '../../../funciones';
 export type incoterm = {
   codigo: number
   incoterm: string

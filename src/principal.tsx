@@ -6,10 +6,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { GraficoIngresosGeneral } from "./sistema/ingreso_general";
 import GraficoIngresosPorEmpresa from "./sistema/ingreso_empresa";
 import { GraficoIngresosPorUsuario } from "./sistema/ingreso_usuario";
-import TablaIndices from "./sistema/indices/indices";
+import TablaIndices from "./sistema/datos/indices/indices";
 import { Ingresos } from "./sistema/ingresos";
 import { Afip } from "./sistema/afip";
-import TablaIncoterms from "./sistema/datos/incoterms";
+import TablaIncoterms from "./sistema/datos/incoterms/incoterms";
 
 export function Principal() {
   return (

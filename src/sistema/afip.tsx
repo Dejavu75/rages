@@ -111,9 +111,7 @@ function GraficoActividad() {
     }).slice(10)
 
   }
-  const labelFormatter = (value: number) => {
-    return `${value}%`
-    }
+
   const percentFormater = (value: number) =>
     (value / 100).toLocaleString('es-AR', {
       style: 'percent',

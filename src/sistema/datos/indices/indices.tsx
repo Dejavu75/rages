@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { MaterialReactTable, MRT_ColumnDef } from 'material-react-table'
-import { nagesConfig } from '../../funciones';
+import { nagesConfig } from '../../../funciones';
 
 
 export type indices = {
