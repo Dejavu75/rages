@@ -16,6 +16,7 @@ export function Encabezado() {
                     <span className="menuitem boxed"><a href="/sistemas">SISTEMAS</a></span>
                     <span className="menuitem boxed"><a href="/indices">ÍNDICES</a></span>
                     <span className="menuitem boxed"><a href="/analytics/ingresos">INGRESOS</a></span>                    
+                    <span className="menuitem boxed"><a href="/datos/incoterms">INCOTERMS</a></span>                         
                     <span className="menuitem boxed"><a href="/analytics/afip">AFIP</a></span>                         
                 </span>
                 <span className="headicon">

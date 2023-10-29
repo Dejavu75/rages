@@ -9,6 +9,7 @@ import { GraficoIngresosPorUsuario } from "./sistema/ingreso_usuario";
 import TablaIndices from "./sistema/indices/indices";
 import { Ingresos } from "./sistema/ingresos";
 import { Afip } from "./sistema/afip";
+import TablaIncoterms from "./sistema/datos/incoterms";
 
 export function Principal() {
   return (
@@ -17,6 +18,7 @@ export function Principal() {
       <div className="enfiladoinfo"  >
         <BrowserRouter>
           <Routes>
+            <Route path="/datos/incoterms" element={<TablaIncoterms />} />            
             <Route path="/indices" element={<TablaIndices />} />
             <Route path="/sistemas" element={<TablaSistemas />} />
             <Route path="/analytics/ingresos" element={<Ingresos />} />
@@ -27,7 +29,7 @@ export function Principal() {
             <Route path="/analytics/ingresos_por_usuario/:key_sistema" element={<GraficoIngresosPorUsuario />} />
             <Route path="/analytics/ingresos_por_usuario/:key_sistema/:user" element={<GraficoIngresosPorUsuario />} />
             <Route path="/analytics/afip" element={<Afip />} />
-            <Route path="/" element={<Afip />} />
+            <Route path="/" element={<TablaIncoterms />} />
           </Routes>
         </BrowserRouter>
       </div>
